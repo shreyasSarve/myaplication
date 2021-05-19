@@ -1,3 +1,83 @@
 <resources>
     <string name="app_name">My Application</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="Programming_Languages">
+        <item>C++</item>
+        <item>C</item>
+        <item>C#</item>
+        <item>Java</item>
+        <item>Python</item>
+        <item>Kotlin</item>
+        <item>JavaScript</item>
+        <item>Ruby</item>
+        <item>C++</item>
+        <item>C</item>
+        <item>C#</item>
+        <item>Java</item>
+        <item>Python</item>
+        <item>Kotlin</item>
+        <item>JavaScript</item>
+        <item>Ruby</item>
+        <item>C++</item>
+        <item>C</item>
+        <item>C#</item>
+        <item>Java</item>
+        <item>Python</item>
+        <item>Kotlin</item>
+        <item>JavaScript</item>
+        <item>Ruby</item>
+    </string-array>
+    <string-array name="Description">
+        <item>this is programming language</item>
+        <item>this is programming language</item>
+        <item>this is programming language</item>
+        <item>this is programming language</item>
+        <item>this is programming language</item>
+        <item>this is programming language</item>
+        <item>this is programming language</item>
+        <item>this is programming language</item>
+        <item>this is programming language</item>
+        <item>this is programming language</item>
+        <item>this is programming language</item>
+        <item>this is programming language</item>
+        <item>this is programming language</item>
+        <item>this is programming language</item>
+        <item>this is programming language</item>
+        <item>this is programming language</item>
+        <item>this is programming language</item>
+        <item>this is programming language</item>
+        <item>this is programming language</item>
+        <item>this is programming language</item>
+        <item>this is programming language</item>
+        <item>this is programming language</item>
+        <item>this is programming language</item>
+        <item>this is programming language</item>
+    </string-array>
+    <string-array name="Subject">
+        <item>C++</item>
+        <item>C</item>
+        <item>C#</item>
+        <item>Java</item>
+        <item>Python</item>
+        <item>Kotlin</item>
+        <item>JavaScript</item>
+        <item>Ruby</item>
+        <item>C++</item>
+        <item>C</item>
+        <item>C#</item>
+        <item>Java</item>
+        <item>Python</item>
+        <item>Kotlin</item>
+        <item>JavaScript</item>
+        <item>Ruby</item>
+        <item>C++</item>
+        <item>C</item>
+        <item>C#</item>
+        <item>Java</item>
+        <item>Python</item>
+        <item>Kotlin</item>
+        <item>JavaScript</item>
+        <item>Ruby</item>
+    </string-array>
 </resources>
