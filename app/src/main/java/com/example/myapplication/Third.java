@@ -2,19 +2,16 @@ package com.example.myapplication;
 
 import android.os.Bundle;
 
-import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.viewpager2.widget.ViewPager2;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import com.etebarian.meowbottomnavigation.MeowBottomNavigation;
-
-import org.jetbrains.annotations.NotNull;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -25,6 +22,7 @@ public class Third extends Fragment {
 String s1[],s2[],s3[];
 RecyclerView recyclerView;
 MeowBottomNavigation bottomNavigation;
+ViewPager2 viewPager;
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -71,7 +69,8 @@ MeowBottomNavigation bottomNavigation;
         // Inflate the layout for this fragment
 
         View view=inflater.inflate(R.layout.fragment_third, container, false);
-        bottomNavigation=getActivity().findViewById(R.id.bottomNavigation);
+        viewPager=getActivity().findViewById(R.id.recyclerView);
+//        bottomNavigation=view.findViewById(R.id.bottomNavigation);
         s1=getResources().getStringArray(R.array.Programming_Languages);
         s2=getResources().getStringArray(R.array.Description);
         s3=getResources().getStringArray(R.array.Subject);
@@ -79,21 +78,25 @@ MeowBottomNavigation bottomNavigation;
         MyAdapter adapter=new MyAdapter(s1,s2,s3,getContext());
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+//        bottomNavigation.add(new MeowBottomNavigation.Model(1,R.drawable.ic_baseline_fingerprint_24));
+//        bottomNavigation.show(1,true);
+
 //        float height=bottomNavigation.getWidth()+bottomNavigation.getX();
-        float negHeight=bottomNavigation.getWidth();
-        float cordinate=bottomNavigation.getX();
-        recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
-            @Override
-            public void onScrolled(@NonNull @NotNull RecyclerView recyclerView, int dx, int dy) {
-                super.onScrolled(recyclerView, dx, dy);
-                if (dy > 0 && cordinate==bottomNavigation.getX()) {
-                    bottomNavigation.animate().translationXBy(-bottomNavigation.getWidth()).setDuration(1000);
-                    Toast.makeText(getContext(), ""+bottomNavigation.getX()+" "+bottomNavigation.getWidth(), Toast.LENGTH_LONG).show();
-                } else if (dy < 0 &&bottomNavigation.getX()==-negHeight) {
-                    bottomNavigation.animate().translationXBy(bottomNavigation.getWidth()).setDuration(1000);
-                }
-            }
-        });
+//        float negHeight=bottomNavigation.getWidth();
+//        float coordinate=bottomNavigation.getX();
+//        recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
+//            @Override
+//            public void onScrolled(@NonNull @NotNull RecyclerView recyclerView, int dx, int dy) {
+//                super.onScrolled(recyclerView, dx, dy);
+//                if (dy > 0 && coordinate==bottomNavigation.getX()) {
+//                    bottomNavigation.animate().translationXBy(-bottomNavigation.getWidth()).setDuration(1000);
+//                    Toast.makeText(getContext(), ""+bottomNavigation.getX()+" "+bottomNavigation.getWidth(), Toast.LENGTH_LONG).show();
+//                } else if (dy < 0 &&bottomNavigation.getX()==-negHeight) {
+//                    bottomNavigation.animate().translationXBy(bottomNavigation.getWidth()).setDuration(1000);
+//                }
+//            }
+//        });
+
         return view;
     }
 }
